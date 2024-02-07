@@ -2,7 +2,7 @@
 
 ## TGO en Analisis y Desarrollo de Software
 
-![Sung Jinwoo](https://pm1.aminoapps.com/7434https://4.bp.blogspot.com/-P-tlcGpOAO0/XNicr8OhgGI/AAAAAAAADnE/LLdgzk8VkMsq3LNyqbzjA3s863-0g0i9gCLcBGAs/s1600/56968365_153613199008075_8196899538272957590_n.jpg)
+![Sung Jinwoo](https://digitalcrime.news/wp-content/uploads/2020/11/Solo-Leveling-123-1024x631-1.jpg)
 
 |Temsa|Descripción|
 |-----|-----------|
