@@ -2,7 +2,7 @@
 
 ## TGO en Analisis y Desarrollo de Software
 
-![Sung Jinwoo](https://pm1.aminoapps.com/7434/0ef1eef28cd2be19c10cffa331fa09ef4d8bdcacr1-719-1104v2_uhq.jpg)
+![Sung Jinwoo](https://pm1.aminoapps.com/7434https://4.bp.blogspot.com/-P-tlcGpOAO0/XNicr8OhgGI/AAAAAAAADnE/LLdgzk8VkMsq3LNyqbzjA3s863-0g0i9gCLcBGAs/s1600/56968365_153613199008075_8196899538272957590_n.jpg)
 
 |Temsa|Descripción|
 |-----|-----------|
