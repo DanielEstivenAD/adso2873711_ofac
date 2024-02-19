@@ -6,6 +6,6 @@
 
 |Temsa|Descripción|
 |-----|-----------|
-|01- HTML|Lenguaje de etiquetas|
+|01- EMMET|Lenguaje de etiquetas|
 |02- CSS|Hojade Estilos en Cascada|
 |03- JavaScript|Lenguaje de programación|
