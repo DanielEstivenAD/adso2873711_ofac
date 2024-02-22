@@ -48,7 +48,7 @@ main {
             width: 280px;
 
             i{
-                background-color: rgb(83, 19, 121);
+                background-color: rgb(198, 129, 65);
                 border-radius: 20px;
                 color: #fff9;
                 font-style: normal;
@@ -63,7 +63,7 @@ main {
 
         a:is(:hover)  {
             transform: scale(1.2) translate(25px);
-            background-color: rgba(121, 236, 217, 0.678);
+            background-color: rgba(138, 236, 121, 0.678);
         }
 
         a:is(:hover) i {
