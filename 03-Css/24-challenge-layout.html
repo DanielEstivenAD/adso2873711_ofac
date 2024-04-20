@@ -5,106 +5,238 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sprite</title>
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         body {
+            
             background-color: #17A053;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            border-top: 10px solid #fff;
+            border-right: 10px solid #fff;
+            border-bottom: 10px solid #fff;
+            border-left:10px solid #fff;
+            margin: auto;
+
         }
-        div.secciones {
-            background: url(images/spriteweb.png) no-repeat;
-            background-position: -10px -400px;
-            margin: 0 auto;
-            height: 180px;
-            width: 190px;
+        div.image-central {
+            background: url(images/spriteweb.png)no-repeat;
+            background-position: -15px -425px;
+            height: 165px;
+            width: 185px;
+
         }
-        div.buttoms {
-           display: flex;
-           gap: 1rem;
-           flex-direction: row;
-           padding: auto;
-           justify-content: center;
-           align-items: center;
-        }
+        section.medio {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            width: 921px;
+        }  
         a:is(:link, :visited) {
             text-decoration: none;
+            background-color: #083019aa;
+            border-bottom: 4px solid #fff;
             color: #fff;
-            background-color: #094322;
-            border-bottom:solid 4px #fff;
-            height: 40px;
-            width: 130px;
+            height: 60px;
+            width: 921px;
             align-items: center;
             display: flex;
             justify-content: center;
-            font-size: 1rem;
-        }
-        div a:is(:hover){
-            background-color: #000;
-            border-color: #d3cc07;
-        }
-        div.imagenes{
-            display: flex;
-            flex-direction: row;          
-            gap: 1.5rem;
-            margin: 2rem;
-            justify-content: center;
-            background-color: #094322;  
-            padding: 1.5rem;
-            width: calc(230px*3);
-            div.sprite{
-                background:url(images/spriteweb.png)no-repeat;
-                background-position: -530px -13px;
-                width: 230px;
-                height: 195px;
-                border: 2px solid #fff;
-                div{
-                    color: #000;
+            font-size: 20px;
+            font-family: "Roboto", sans-serif;
+            }
+            a:is(:hover) {
+                background-color: #000000aa;
+                border-color: #dfeb07;
+            }
+            div.image-medium{
+                background-color: #083019aa;
+                display: flex;   
+                gap: 1rem;
+                align-items: center;
+                justify-content: center;
+                width: calc(295px*3);
+                height: 190px;
+                margin: 40px;
+                padding: 1rem;
+                div.sprite{
+                    background: url(images/spriteweb.png)no-repeat;
+                    background-position: -499px -18px;
+                    height: 190px;
+                    width: 290px;
+                    border: 1px solid #ffffffe5;
+                    font-size: 20px;
+                    font-family: "Roboto", sans-serif;
+                    div{
+                        color: #000;
+                        justify-content: center;
+                        background-color: #fff5;
+                        padding: 1.2rem;
+                        display: flex;
+                        font-weight: 800;
+                    }
+                
+                &:hover div {
                     background-color: #fff9;
-                    display: flex;
-                    justify-content: center;
-                    padding: 1.2rem;
                 }
-                &:hover div{
-                    background-color: #b7a8a8a0;
                 }
             }
-        }
-        section {
-            flex-direction: row;
-        }
+            div.text{
+                background-color: #083019aa;
+                justify-content: center;
+                align-items: center;
+                width: 917px;
+                margin: 05px;
+                height: 640px;
+                display: flex;
+                flex-direction: column;
+                font-family: "Roboto", sans-serif;
+                div {
+                    background-color: #fff;
+                }
+                div.general{
+                    color: #000000;
+                    width:900px;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    display: flex;
+                    margin: 05px;
+                }
+                div.circule {
+                    background: url(images/spriteweb.png) no-repeat center;
+                    background-position: -250px -490px;
+                    height: 100px;
+                    width: 200px;
+
+                }
+                div.lorem {
+                    flex-direction: row;
+                    width: 549px;
+                    height: 150px;
+                    text-align: justify;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 17px;
+                }
+                div.lorem:is(:hover){
+                    color: #17a06e;
+                }
+                div.lata {
+                    background: url(images/spriteweb.png)no-repeat;
+                    background-position: -49px -190px;
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+            div.finish {
+                background-color: #fff;
+                margin-bottom: 20px;
+                margin-top: 50px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                width: 917px;
+                height: 270px;
+                flex-direction: column;
+                font-family: "Roboto", sans-serif;
+            }
+            div.image-final {
+                background: url(images/spriteweb.png)no-repeat;
+                background-position: -515px -420px;
+                width: 220px;
+                height: 200px;    
+
+            }
+            div.abajo{
+                gap: 0.1rem;
+                flex-direction: row;
+                display: flex;
+                width: 915px; 
+                margin: 5px;
+                justify-content: center;
+                align-items: center;
+                height: 60px;
+                background-color: #fff;
+            }
+            div.bajo {
+
+                border-bottom: 4px solid #ffffff;
+                justify-content: center;
+                align-items: center;
+                margin: 10px;
+                display: flex;
+                width: 10rem;
+                height: 45px;
+                font-size: 1.2rem;
+            }
+            div.bajo:is(:hover){
+                border-color: #083019;
+            }
+
+
+            
     </style>
 </head>
 <body>
-    <div class="secciones"></div>
-    <div class="buttoms">
-        <a href="buttom">INICIO</a>
-        <a href="buttom">NOSOTROS</a>
-        <a href="buttom">PORTAFOLIO</a>
-        <a href="buttom">SERVICIOS</a>
-        <a href="buttom">CONTACTO</a>
-    </div>
-    <div class="imagenes">
-        <div class="sprite"><div>Sprite 01</div></div>
-        <div class="sprite"><div>Sprite 02</div></div>
-        <div class="sprite"><div>Sprite 03</div></div>
-    </div>
-    <section>
-        <div class="text">
-            <div class="image">xd</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ex quasi dolorum iste, quae possimus perspiciatis dolores sapiente aliquid nulla illo pariatur iure fuga eos eveniet veniam facere excepturi cupiditate.</div>
-            <div class="image2">xd</div>
-        </div>
-        <div class="text">
-            <div class="image">xd</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, similique aliquam? Dignissimos non natus numquam debitis! Officiis veniam at laborum tenetur harum! Dolor ratione dolores mollitia voluptates, blanditiis itaque repellat.</div>
-            <div class="image2">xd</div>
-        </div>
-        <div class="text">
-            <div class="image">xd</div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quas quibusdam laudantium. Dolor ullam aliquid, eum nobis illum delectus magni a quibusdam. Dolorum voluptate nostrum eum impedit laboriosam iste corporis!</div>
-            <div class="image2">xd</div>
-        </div>
+    <header>
+        <div class="image-central"></div>
+    </header>
+    <section class="medio">
+        <a href="#">INICIO</a>
+        <a href="#">NOSOTROS</a>
+        <a href="#">PORTAFOLIO</a>
+        <a href="#">SERVICIOS</a>
+        <a href="#">CONTACTO</a>
     </section>
+    <div class="image-medium">
+        <div class="sprite">
+            <div>
+                Sprite01
+            </div>
+        </div>
+        <div class="sprite">
+            <div>
+                Sprite02
+            </div>
+        </div>
+        <div class="sprite">
+            <div>
+                Sprite03
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        <div class="general">
+            <div class="circule"></div>
+            <div class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ad quo, eius excepturi nobis maiores perspiciatis odio sed possimus aut mollitia beatae dolorem nemo debitis omnis quidem ipsam earum impedit!
+            Quibusdam, laboriosam. Saepe, officiis! Possimus, voluptas saepe obcaecati qui magni dolore cum recusandae atque, assumenda natus quia aliquid expedita ad omnis neque repellat aspernatur officiis minus repudiandae corporis perspiciatis sed.</div>
+            <div class="lata"></div>
+        </div>
+        <div class="general">
+            <div class="circule"></div>
+            <div class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ad quo, eius excepturi nobis maiores perspiciatis odio sed possimus aut mollitia beatae dolorem nemo debitis omnis quidem ipsam earum impedit!
+                Quibusdam, laboriosam. Saepe, officiis! Possimus, voluptas saepe obcaecati qui magni dolore cum recusandae atque, assumenda natus quia aliquid expedita ad omnis neque repellat aspernatur officiis minus repudiandae corporis perspiciatis sed.</div>
+                <div class="lata"></div>
+        </div>
+        <div class="general">
+            <div class="circule"></div>
+            <div class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ad quo, eius excepturi nobis maiores perspiciatis odio sed possimus aut mollitia beatae dolorem nemo debitis omnis quidem ipsam earum impedit!
+                Quibusdam, laboriosam. Saepe, officiis! Possimus, voluptas saepe obcaecati qui magni dolore cum recusandae atque, assumenda natus quia aliquid expedita ad omnis neque repellat aspernatur officiis minus repudiandae corporis perspiciatis sed.</div>
+                <div class="lata"></div>
+        </div>
+    </div>
+    <div class="finish">
+        <div class="image-final"></div>
+        <div class="abajo">
+            <div class="bajo">INICIO</div>
+            <div class="bajo">NOSOTROS</div>
+            <div class="bajo">PORTAFOLIO</div>
+            <div class="bajo">SERVICIOS</div>
+            <div class="bajo">CONTACTO</div>
+        </div>
+    </div>
 </body>
 </html>
