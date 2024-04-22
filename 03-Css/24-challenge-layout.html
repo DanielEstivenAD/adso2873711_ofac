@@ -7,25 +7,22 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         body {
-            
-            background-color: #17A053;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
+            background-color: #17A053;
             border-top: 10px solid #fff;
             border-right: 10px solid #fff;
             border-bottom: 10px solid #fff;
             border-left:10px solid #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             margin: auto;
-
         }
         div.image-central {
             background: url(images/spriteweb.png)no-repeat;
             background-position: -15px -425px;
             height: 165px;
             width: 185px;
-
         }
         section.medio {
             display: flex;
@@ -34,92 +31,90 @@
             width: 921px;
         }  
         a:is(:link, :visited) {
-            text-decoration: none;
+            align-items: center;
             background-color: #083019aa;
             border-bottom: 4px solid #fff;
             color: #fff;
-            height: 60px;
-            width: 921px;
-            align-items: center;
             display: flex;
-            justify-content: center;
             font-size: 20px;
             font-family: "Roboto", sans-serif;
+            height: 60px;
+            justify-content: center;
+            text-decoration: none;
+            width: 921px;
             }
             a:is(:hover) {
                 background-color: #000000aa;
                 border-color: #dfeb07;
             }
-            div.image-medium{
-                background-color: #083019aa;
-                display: flex;   
-                gap: 1rem;
-                align-items: center;
-                justify-content: center;
-                width: calc(295px*3);
-                height: 190px;
-                margin: 40px;
-                padding: 1rem;
+        div.image-medium{
+            align-items: center;
+            background-color: #083019aa;
+            display: flex;   
+            gap: 1rem;
+            height: 190px;
+            justify-content: center;
+            margin: 40px;
+            padding: 1rem;
+            width: calc(295px*3);
                 div.sprite{
                     background: url(images/spriteweb.png)no-repeat;
                     background-position: -499px -18px;
-                    height: 190px;
-                    width: 290px;
                     border: 1px solid #ffffffe5;
                     font-size: 20px;
                     font-family: "Roboto", sans-serif;
+                    height: 190px;
+                    width: 290px;
                     div{
-                        color: #000;
-                        justify-content: center;
                         background-color: #fff5;
-                        padding: 1.2rem;
+                        color: #000;
                         display: flex;
                         font-weight: 800;
+                        justify-content: center;
+                        padding: 1.2rem;
                     }
-                
                 &:hover div {
                     background-color: #fff9;
                 }
                 }
             }
             div.text{
-                background-color: #083019aa;
-                justify-content: center;
                 align-items: center;
-                width: 917px;
-                margin: 05px;
-                height: 640px;
+                background-color: #083019aa;
                 display: flex;
                 flex-direction: column;
                 font-family: "Roboto", sans-serif;
+                height: 640px;
+                justify-content: center;
+                margin: 05px;
+                width: 917px;
                 div {
                     background-color: #fff;
                 }
                 div.general{
-                    color: #000000;
-                    width:900px;
-                    justify-content: center;
                     align-items: center;
-                    text-align: center;
+                    color: #000000;
                     display: flex;
+                    justify-content: center;
                     margin: 05px;
+                    text-align: center;
+                    width:900px;
                 }
                 div.circule {
                     background: url(images/spriteweb.png) no-repeat center;
                     background-position: -250px -490px;
                     height: 100px;
                     width: 200px;
-
                 }
                 div.lorem {
-                    flex-direction: row;
-                    width: 549px;
-                    height: 150px;
-                    text-align: justify;
-                    display: flex;
-                    justify-content: center;
                     align-items: center;
+                    display: flex;
+                    flex-direction: row;
                     font-size: 17px;
+                    height: 150px;
+                    justify-content: center;
+                    text-align: justify;
+                    width: 549px;
                 }
                 div.lorem:is(:hover){
                     color: #17a06e;
@@ -132,52 +127,48 @@
                 }
             }
             div.finish {
-                background-color: #fff;
-                margin-bottom: 20px;
-                margin-top: 50px;
-                justify-content: center;
                 align-items: center;
+                background-color: #fff;
                 display: flex;
-                width: 917px;
-                height: 270px;
                 flex-direction: column;
                 font-family: "Roboto", sans-serif;
+                height: 270px;
+                justify-content: center;
+                margin-bottom: 20px;
+                margin-top: 50px;
+                width: 917px;
             }
             div.image-final {
                 background: url(images/spriteweb.png)no-repeat;
                 background-position: -515px -420px;
-                width: 220px;
                 height: 200px;    
+                width: 220px;
 
             }
             div.abajo{
-                gap: 0.1rem;
-                flex-direction: row;
-                display: flex;
-                width: 915px; 
-                margin: 5px;
-                justify-content: center;
                 align-items: center;
-                height: 60px;
                 background-color: #fff;
+                display: flex;
+                flex-direction: row;
+                gap: 0.1rem;
+                height: 60px;
+                justify-content: center;
+                margin: 5px;
+                width: 915px; 
             }
             div.bajo {
-
-                border-bottom: 4px solid #ffffff;
-                justify-content: center;
                 align-items: center;
-                margin: 10px;
+                border-bottom: 4px solid #ffffff;
                 display: flex;
-                width: 10rem;
-                height: 45px;
                 font-size: 1.2rem;
+                height: 45px;
+                justify-content: center;
+                margin: 10px;
+                width: 10rem;
             }
             div.bajo:is(:hover){
                 border-color: #083019;
-            }
-
-
-            
+            }  
     </style>
 </head>
 <body>
