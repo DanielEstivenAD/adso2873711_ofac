@@ -14,11 +14,10 @@
 
         body {
             background: url(images/pxfuel.jpg) no-repeat center;
-            border: 2px solid red;
+            background-size: cover;
             color: #fffc;
             font-family: Poppins, sans-serif;
             font-weight: 400px;
-            background-size: 150rem;
         }
 
         main {
@@ -26,62 +25,306 @@
         }
 
         main header figure.logo {
-            border: 2px solid red;
             background: url(images/logoreddead-removebg-preview.png) no-repeat center;
             height: 370px;
             margin: auto;
-            width: 69rem;
+            width: 100rem;
         }
 
         section {
+            background-color: #000;
+            border: 10px solid #0009;
+            height: 300px;
             margin: auto;
-            width: 69rem;
             margin-top: 1rem;
+            width: 100rem;
         }
 
-        section div.caja1 {
-            justify-content: center;
+        section div {
+            align-items: center;
+            align-items: center;
             display: flex;
             gap: 1rem;
-            height: 250px;
-            width: 69rem;
+            height: 300px;
+            justify-content: center;
+            justify-content: center;
             position: relative;
+            width: 100rem;
         }
 
         section div.arthur {
-            background: url(images/arthur1.webp) no-repeat center;
-            width: 300px;
-            background-position: 0 -10px;
             background-size: cover;
-            align-items: flex-end;
+            background: url(images/arthur1.webp) no-repeat center;
+            width: 500px;
         }
 
         section div.john {
             background: url(images/john1.webp) no-repeat center;
             background-size: cover;
-            width: 300px;
+            width: 500px;
         }
 
         section div.duch {
             background: url(images/dutch.webp) no-repeat center;
             background-position: 0 -10px;
             background-size: cover;
-            width: 300px;
+            width: 500px;
         }
 
         section div.micah {
             background: url(images/Micah.webp) no-repeat center;
             background-size: cover;
-            width: 300px;
+            width: 500px;
         }
-        section div p{
-            border: 2px solid red;
-            position: absolute;
-            top: 206px;
-            width: 261px;
-            text-align: center;
-            height: 50px;
+
+        section div div.txt {
+            align-items: center;
+            bottom: -1px;
             background-color: #0009;
+            font-size: 15px;
+            height: 60px;
+            position: absolute;
+            text-align: center;
+            text-transform: uppercase;
+            transition: all 0.4s ease-in;
+            width: 388px;
+        }
+
+        section div :hover div.txt {
+            font-size: 20px;
+            height: 110px;
+        }
+
+        nav {
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            width: 100rem;
+        }
+
+        nav article {
+            border: 2px dashed #9999;
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        nav article img {
+            background-size: cover;
+            width: 385px;
+        }
+
+        nav article nav.text {
+            margin-top: 0;
+            margin-left: 20px;
+            width: 810px;
+        }
+
+        nav article h1 {
+            display: flex;
+            font-size: 30px;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        nav article p {
+            text-align: justify;
+        }
+
+        @media (max-width: 1024px) {
+            body {
+                background-size: cover;
+                background: url(images/pxfuel.jpg) no-repeat center;
+                color: #fffc;
+                font-weight: 400px;
+                font-family: Poppins, sans-serif;
+            }
+
+            main header figure.logo {
+                background: url(images/c9f1a20e574dbaeda0304980bb7b6e29-ai-brush-removebg-oxj1bjms.png) no-repeat center;
+                height: 470px;
+                margin: auto;
+                width: 520px;
+            }
+
+            section {
+                background-color: #000;
+                gap: 1rem;
+                height: 640px;
+                width: 830px;
+            }
+
+            section div {
+                align-items: center;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                height: 640px;
+                justify-content: center;
+                margin: auto;
+                width: 830px;
+            }
+
+            section div.arthur {
+                background: url(images/arthur1.webp) no-repeat center;
+                background-size: cover;
+                height: 300px;
+                width: 400px;
+            }
+
+            section div.john {
+                background: url(images/john1.webp) no-repeat center;
+                background-size: cover;
+                height: 300px;
+                width: 400px;
+            }
+
+            section div.duch {
+                background: url(images/dutch.webp) no-repeat center;
+                background-position: 0 -10px;
+                background-size: cover;
+                height: 300px;
+                width: 400px;
+            }
+
+            section div.micah {
+                background: url(images/Micah.webp) no-repeat center;
+                background-size: cover;
+                height: 300px;
+                width: 400px;
+            }
+
+            section div div.txt {
+                align-items: center;
+                display: flex;
+                font-size: 15px;
+                height: 60px;
+                justify-content: center;
+                text-align: center;
+                text-transform: uppercase;
+                transition: all 0.4s ease-in;
+                width: 400px;
+            }
+
+            nav {
+                margin-top: 2rem;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                width: 830px;
+            }
+
+            nav article p {
+                height: 200px;
+                overflow-y: scroll;
+                width: 410px;
+            }
+        }
+
+        @media(max-width: 780px) {
+            body {
+                background: url(images/pxfuel.jpg) no-repeat center;
+                background-size: cover;
+                color: #fffc;
+                font-family: Poppins, sans-serif;
+                font-weight: 400px;
+                flex-direction: column;
+            }
+
+            main header figure.logo {
+                background: url(images/256x256.png) no-repeat center;
+                height: 256px;
+                margin: auto;
+                width: 256px;
+            }
+
+            section {
+                background-color: #000;
+                gap: 1rem;
+                height: 91rem;
+                width: 360px;
+            }
+
+            section div {
+                align-items: center;
+                display: grid;
+                grid-template-columns: 1fr;
+                height: 640px;
+                justify-content: center;
+                justify-content: center;
+                margin: auto;
+                margin-top: 1px;
+                width: 350px;
+            }
+
+            section div.arthur {
+                background: url(images/arthur1.webp) no-repeat center;
+                background-position: 0% -5px;
+                background-size: cover;
+                height: 350px;
+                width: 350px;
+            }
+
+            section div.john {
+                background: url(images/john1.webp) no-repeat center;
+                background-size: cover;
+                height: 350px;
+                width: 350px;
+            }
+
+            section div.duch {
+                background: url(images/dutch.webp) no-repeat center;
+                background-position: 0 -10px;
+                background-size: cover;
+                height: 350px;
+                width: 350px;
+            }
+
+            section div.micah {
+                background: url(images/Micah.webp) no-repeat center;
+                background-size: cover;
+                height: 350px;
+                width: 350px;
+            }
+
+            section div div.txt {
+                width: 350px;
+            }
+
+            nav {
+                align-items: center;
+                justify-content: center;
+                margin-top: 10rem;
+                margin: auto;
+                width: 400px;
+            }
+
+            nav article {
+                border: 2px dashed #9999;
+                flex-direction: column;
+                margin-top: 1rem;
+            }
+
+            nav article p {
+                height: 200px;
+                margin: auto;
+                overflow-y: scroll;
+                width: 390px;
+            }
+
+            nav article img {
+                align-items: center;
+                background-size: cover;
+                box-sizing: border-box;
+                justify-content: center;
+                margin-left: -1px;
+                width: 397px;
+            }
+
+            nav article nav.text {
+                margin-top: 0;
+                margin: auto;
+                width: 392px;
+            }
         }
     </style>
 </head>
@@ -94,33 +337,53 @@
         <section>
             <div class="caja1">
                 <div class="arthur">
-                    <p>Arthur</p>
+                    <div class="txt">Arthur</div>
                 </div>
                 <div class="john">
-                    <p>John</p>
+                    <div class="txt">John</div>
                 </div>
                 <div class="duch">
-                    <p>Duch</p>
+                    <div class="txt">Duch</div>
                 </div>
                 <div class="micah">
-                    <p>Micah</p>
+                    <div class="txt">Micah</div>
                 </div>
             </div>
         </section>
         <nav>
-            <div class="descripcionarthur">
-                <nav>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores doloribus commodi eius ipsa
-                    fugiat
-                    tempore voluptas mollitia. Alias, impedit consequuntur.</nav>
-            </div>
-            <div class="descripcionjohn">
-                <nav>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores doloribus commodi eius ipsa
-                    fugiat
-                    tempore voluptas mollitia. Alias, impedit consequuntur.</nav>
-            </div>
+            <article class="descripcionArthur">
+                <img calss="arthur2" src="images/arthur2.jpg">
+                <nav class="text">
+                    <h1>Arthur Morgan</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, vitae? Eaque accusamus, vel
+                        ipsam itaque, quia nesciunt laborum tempore, quidem quam officia vero quos inventore dolorum
+                        quasi minima velit porro. Mollitia odit unde, nobis atque cum doloribus ullam dolor sunt odio
+                        ratione quos sed labore vel, eveniet eius. Perferendis corporis soluta ab deserunt tempore
+                        doloremque sed possimus quod praesentium eveniet beatae nobis ducimus architecto eaque eius
+                        minima, necessitatibus distinctio deleniti aspernatur esse maiores quam ea accusantium dolorem!
+                        Nesciunt sequi maiores rem dignissimos laudantium, quo odio dolores esse veritatis. Temporibus
+                        tempora aliquid perferendis enim libero officia sint neque necessitatibus, sunt mollitia.
+                    </p>
+                </nav>
+            </article>
+            <article class="descripcionJohn">
+                <img class="arthur2" src="images/john2.jpeg">
+                <nav class="text">
+                    <h1>John Marston</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, dolorum quasi. Sed quo itaque
+                        officiis iusto, deserunt ipsa porro tenetur dignissimos, corporis repudiandae sequi numquam
+                        blanditiis reiciendis natus mollitia ab! Perferendis voluptas laudantium alias enim dicta
+                        molestiae, ex, inventore, vel aperiam aspernatur architecto ducimus ipsum vitae quibusdam? Saepe
+                        itaque sunt doloribus natus corporis. Quis labore facilis beatae, tempore similique aut
+                        sapiente? Fugiat ut placeat doloribus voluptatem vitae in voluptas ipsa rem cumque alias,
+                        architecto incidunt harum eius, distinctio, odit ullam blanditiis? Expedita ipsa in atque fugit
+                        explicabo omnis illo aperiam recusandae dignissimos eius, consectetur, voluptas iusto tenetur,
+                        esse enim unde?
+                    </p>
+                </nav>
+            </article>
         </nav>
     </main>
-
 </body>
 
 </html>
