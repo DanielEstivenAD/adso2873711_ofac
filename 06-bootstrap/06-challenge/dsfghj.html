@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Position Fixed y Cambio de Color con Scroll</title>
+    <style>
+        body {
+            height: 2000px; /* Para permitir el scroll */
+            margin: 0;
+            padding: 0;
+        }
+
+        .barra {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: azul;
+            color: blanco;
+            text-align: center;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .content {
+            margin-top: 60px; /* Ajuste para compensar la barra fija */
+        }
+
+        /* Punto de referencia para el cambio de color */
+        .trigger {
+            height: 1px;
+            position: relative;
+            top: 200px; /* Ajusta la posición del trigger según tus necesidades */
+        }
+
+        .trigger:before {
+            content: '';
+            display: block;
+            height: 1000px; /* Ajusta según sea necesario */
+        }
+
+        .trigger:after {
+            content: '';
+            display: block;
+            height: 1px;
+            position: absolute;
+            top: -200px;
+            width: 100%;
+        }
+
+        .trigger:after {
+            content: '';
+            display: block;
+            height: 1px;
+            position: absolute;
+            top: -200px;
+            width: 100%;
+        }
+
+        .trigger:after + .barra {
+            background-color: rojo;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="barra">
+        Barra fija
+    </div>
+
+    <div class="content">
+        <p>Desplázate hacia abajo para ver el cambio de color.</p>
+        <div class="trigger"></div>
+        <p>Más contenido aquí...</p>
+    </div>
+
+</body>
+</html>
