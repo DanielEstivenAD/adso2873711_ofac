@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Ocultar todas las vistas inicialmente */
+        .vista {
+            display: none;
+        }
+
+        /* Mostrar la vista activa */
+        .vista:target {
+            display: block;
+        }
+
+        /* Mostrar la vista inicial (vista 1) cuando no hay hash en la URL */
+        #vista1:target,
+        body:not(:has(:target)) #vista1 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-[#3f3f3ff5]               
+            justify-center
+            flex
+            items-center 
+            text-center">
+
+    <!-- Vista 1 -->
+    <main class="vista bg-black
+                mt-20
+                w-[500px]
+                h-[800px]
+                justify-center
+                items-center
+                rounded-3xl
+                text-white" id="vista1">
+        <div><img class="mt-[-103px] rounded-t-3xl scale-y-[0.70]" src="../07-tailwind/images/6-1-204269-52.jpg"></div>
+        <div class="justify-center items-center flex mt-[-100px]">
+            <nav class="rounded-full h-4 w-4 bg-white"></nav>
+        </div>
+        <div class="text-5xl font-bold mt-5 text-green-600">Project Zomboid</div>
+        <div class="text-xl mt-10">Es un Realista juego de supervivencia zombie</div>
+        <a href="#vista2">
+            <button
+                class="px-9 py-4 font-semibold text-3xl bg-red-700 text-white rounded-md text-center items-center justify-center mt-10">Get
+                started</button>
+        </a>
+    </main>
+
+    <!-- Vista 2 -->
+    <main class="vista bg-black
+                mt-20
+                w-[500px]
+                h-[800px]
+                justify-center
+                items-center
+                rounded-3xl
+                text-white" id="vista2">
+        <a href="#vista1" class="bg-[#505050] h-96 w-96">
+            <img class="bg-[#7c7c7c] rounded-full scale-[0.50]" src="images/icons8-left-arrow-96.png" alt="">
+        </a>
+        <div class="text-5xl font-bold text-green-600 mt-[-50px]">Prioridades</div>
+        <div>
+            <div class="flex items-center pl-10 mt-2">
+                <nav class="w-16 h-16 rounded-full flex items-center justify-center bg-red-800  ring-white z-20">
+                    100%</nav>
+                <nav class="pl-[50px] text-2xl">Buscar una mochila</nav>
+            </div>
+            <img src="images/x1080.jpg" class="scale-[0.86] rounded-3xl">
+            <div class="flex items-center pl-10 mt-2">
+                <nav class="w-16 h-16 rounded-full flex items-center justify-center bg-red-800  ring-white z-20">
+                    100%</nav>
+                <nav class="pl-[50px] text-2xl">Buscar Comida</nav>
+            </div>
+            <div class="flex items-center pl-10 mt-2">
+                <nav class="w-16 h-16 rounded-full flex items-center justify-center bg-red-800  ring-white z-20">
+                    100%</nav>
+                <nav class="pl-[50px] text-2xl">Buscar Armas</nav>
+            </div>
+            <div class="flex items-center pl-10 mt-2">
+                <nav class="w-16 h-16 rounded-full flex items-center justify-center bg-red-800  ring-white z-20">
+                    100%</nav>
+                <nav class="pl-[50px] text-2xl">Consumir comida que se dañe</nav>
+            </div>
+        </div>
+        <a href="#vista3">
+            <button
+                class="px-9 py-4 font-semibold text-3xl bg-red-700 text-white rounded-md text-center items-center justify-center mt-3">Continue</button>
+        </a>
+    </main>
+
+    <!-- Vista 3 -->
+    <main class="vista bg-black
+                mt-20
+                w-[500px]
+                h-[800px]
+                justify-center
+                items-center
+                rounded-3xl
+                text-white" id="vista3">
+        <a href="#vista2" class="bg-[#7c7c7c] h-96 w-96">
+            <img class="bg-[#7c7c7c] rounded-full scale-[0.50]" src="images/icons8-left-arrow-96.png" alt="">
+        </a>
+        <div class="text-5xl font-bold text-green-600 mt-[-50px]">Lugares donde aparecerás</div>
+        <div class="relative rounded-xl overflow-auto mt-[-10px]">
+            <div class="shadow-sm overflow-hidden my-8">
+                <table class="m-1 ml-10 table-auto text-center text-[20px]">
+                    <thead>
+                        <tr>
+                            <th class="border-b border-red-400 p-4 pl-8 text-white"></th>
+                            <th class="border-b border-red-400 p-4 pl-8 text-white"></th>
+                            <th class="border-b border-red-400 p-4 pl-8 text-white"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-red-800">
+                        <tr>
+                            <td class="border-b border-red-400 p-4 pl-8 text-white ">Muldraugh</td>
+                            <td class="border-b border-red-400 p-4 text-white"><br></td>
+                            <td class="border-b border-red-400 p-4 pr-8 text-white"></td>
+                        </tr>
+                        <tr>
+                            <td class="border-b border-red-400 p-4 pl-8 text-white">West Point</td>
+                            <td class="border-b border-red-400 p-4 text-white"></td>
+                            <td class="border-b border-red-400 p-4 pr-8 text-white"></td>
+                        </tr>
+                        <tr>
+                            <td class="border-b border-red-400 p-4 pl-8 text-white">Riverside</td>
+                            <td class="border-b border-red-400 p-4 text-white"></td>
+                            <td class="border-b border-red-400 p-4 pr-8 text-white"></td>
+                        </tr>
+                        <tr>
+                            <td class="border-b border-red-400 p-4 pl-8 text-white">Rosewood</td>
+                            <td class="border-b border-red-400 p-4 text-white"></td>
+                            <td class="border-b border-red-400 p-4 pr-8 text-white"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="text-2xl">Al jugar Project Zomboid, tendrás que estar muy atento</div>
+        <div class="text-5xl font-bold text-green-600 mt-[10px]">¡Suerte!</div>
+        <a href="#vista1">
+            <button
+                class="px-9 py-4 font-semibold text-3xl bg-red-700 text-white rounded-md text-center items-center justify-center mt-10">Continue</button>
+        </a>
+    </main>
+
+</body>
+
+</html>
