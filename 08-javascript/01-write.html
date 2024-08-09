@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01- Write</title>
+    <link rel="stylesheet" href="css/master.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <nav class="controls">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#ffffff"
+                    d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L301.3 256 438.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z" />
+            </svg>
+        </a>
+    </nav>
+    <main>
+        <header>
+            <h1>01- Write</h1>
+            <h2>Muiltiples de mostrar información en pantalla y consola</h2>
+        </header>
+        <section>
+            <script>
+                document.write('<h2>Hello Js</h2>')
+            </script>  
+            <p id="message"></p>
+        </section>
+    </main>
+    <script>
+        //Screen
+        alert('Welcome to Javascript 💛')
+        const msg = document.getElementById('message')
+        // msg.innerHTML = 'Lorem ipsum dolor <strong> Js </strong>'
+        //msg.innerText = 'Lorem ipsum dolor'
+        msg.textContent = 'Lorem ipsum dolor sit amet...'
+
+        //Console
+        console.log('Tangamandapio')
+        console.log('1024/32='+1024/32)
+        console.clear()
+        const people = [
+            ["Tyrone","Jones"],
+            ["Janet","Smith"],
+            ["Maria","Cruz"],
+        ]
+        console.table(people)
+    </script>    
+</body>
+</html>
