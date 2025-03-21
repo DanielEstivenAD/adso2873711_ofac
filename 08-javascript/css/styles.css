@@ -38,9 +38,35 @@ ol {
     list-style: none;
 }
 
+nav.controls {
+    position: fixed;
+
+    a:is(:link, :visited) {
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff9;
+        height: 40px;
+        transform: scale(0.8);
+        opacity: 0.6;
+        padding: 10px;
+        width: 40px;
+        transition: all 0.4s ease-in;
+    }
+
+    a:is(:hover) {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    svg {
+        width: 40px;
+    }
+}
 
 body {
-    background-color: #f3f3f3;
+    background-color: #646363;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +74,6 @@ body {
 
 section {
     background: url(/08-javascript/images/arrays/fondo.png) no-repeat;
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,7 +83,6 @@ section {
 }
 
 .title-logo {
-    border: 2px solid red;
     width: 100%;
     height: 15%;
     display: flex;
@@ -76,7 +100,6 @@ section {
 
 .inventario-a,
 .inventario-b {
-    border: 2px solid red;
     height: 100%;
     width: 598.28px;
     display: flex;
@@ -105,7 +128,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .inventario-a {
@@ -116,84 +140,117 @@ section {
     background: url(/08-javascript/images/arrays/inventarioFuera.png) no-repeat;
 }
 
+/* Las definiciones generales se mantienen igual */
+
+/* Las definiciones generales se mantienen igual */
+
+/* Circle layout for iteration buttons */
 .iterations {
-    border: 2px solid red;
-    height: 40%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 .button-container {
-    border: 2px solid red;
-    width: 275px;
-    height: 275px;
-    background: url(/08-javascript/images/arrays/button-general.png);
+    background-color: #141414;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    position: absolute;
+    padding: 40px;
+    /* Añadir padding para mantener botones dentro */
 }
 
-/* .buttons-first,
+/* Position ejecutar button in the center */
+.buttons-ejecutar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+/* Redistribución de botones en un semicírculo superior e inferior */
+.buttons-first,
+.buttons-position,
 .buttons-last,
 .buttons-add,
 .buttons-remove {
-    border: 2px solid red;
-} */
+    position: absolute;
+}
 
+/* Botones superiores */
+/* Izquierda superior (first) */
+.buttons-first {
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -25%);
+}
+
+/* Centro superior (position) */
+.buttons-position {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Derecha superior (last) */
+.buttons-last {
+    top: 25%;
+    right: 25%;
+    transform: translate(50%, -25%);
+}
+
+/* Botones inferiores */
+/* Izquierda inferior (add) */
+.buttons-add {
+    bottom: 18%;
+    left: 25%;
+    transform: translate(-39%, 25%);
+}
+
+/* Derecha inferior (remove) */
+.buttons-remove {
+    bottom: 18%;
+    right: 30%;
+    transform: translate(55%, 25%);
+}
+
+/* Style for all buttons */
 .button-1,
 .button-2,
 .button-3,
 .button-4,
 .button-5,
 .button-6 {
-    position: relative;
-    width: 30px;
-    background-color: rgba(145, 145, 145, 0.089);
-    border: none;
-    color: #f3f3f3;
-}
-
-.button-1 {
-    top: 115px;
-    border-radius: 30px;
-    left: 15px;
-    width: 60px;
-}
-
-.button-2 {
-    top: 5px;
-    border-radius: 30px;
-    left: 100px;
-    width: 90px;
-}
-
-.button-3 {
-    border-radius: 30px;
-    top: 58px;
-    left: 210px;
-    width: 50px;
-}
-
-.button-4 {
-    top: 8px;
-    left: 79.5px;
+    width: 70px;
+    /* Reducir ligeramente el tamaño */
+    height: 70px;
     border-radius: 50%;
-    height: 116px;
-    width: 116px;
+    border: 2px solid #b1b1b1;
+    background-color: #d9d9d9;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
-.button-5 {
-    border-radius: 30px;
-    top: 12px;
-    left: 60px;
-    width: 50px;
+/* Make ejecutar button larger */
+.button-4 {
+    width: 90px;
+    /* Ajustar tamaño */
+    height: 90px;
+    background-color: #ff5252;
+    color: white;
+    font-size: 1.5rem;
 }
 
-.button-6 {
-    border-radius: 30px;
-    top: -10px;
-    left: 155px;
-    width: 80px;
-}
-
+/* El resto de los estilos se mantienen igual */
