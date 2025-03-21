@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Challenge Arrays</h1>
+        </header>
+        <section>
+            <div class="title-logo"><img src="/08-javascript/images/arrays/title.png" alt=""></div>
+            <div class="container">
+                <div class="inventario-a">
+                    <div class="line-1">
+                        <div class="slost" id="a"></div>
+                        <div class="slost" id="b"></div>
+                        <div class="slost" id="c"></div>
+                        <div class="slost" id="d"></div>
+                    </div>
+                    <div class="line-2">
+                        <div class="slost" id="e"></div>
+                        <div class="slost" id="f"></div>
+                        <div class="slost" id="g"></div>
+                        <div class="slost" id="h"></div>
+                    </div>
+                </div>
+                <div class="inventario-b">
+                    <div class="line-1">
+                        <div class="slost" id="1"><img src="/08-javascript/images/arrays/bate.png" alt=""></div>
+                        <div class="slost" id="2"><img src="/08-javascript/images/arrays/bebi.png" alt=""></div>
+                        <div class="slost" id="3"><img src="/08-javascript/images/arrays/choco.png" alt=""></div>
+                        <div class="slost" id="4"><img src="/08-javascript/images/arrays/esco.png" alt=""></div>
+                    </div>
+                    <div class="line-2">
+                        <div class="slost" id="5"><img src="/08-javascript/images/arrays/hacha.png" alt=""></div>
+                        <div class="slost" id="6"><img src="/08-javascript/images/arrays/pildoras.png" alt=""></div>
+                        <div class="slost" id="7"><img src="/08-javascript/images/arrays/saca.png" alt=""></div>
+                        <div class="slost" id="8"><img src="/08-javascript/images/arrays/tarro.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="iterations">
+                <div class="button-container">
+                    <div class="buttons-first"><button class="button-1" id="first">FIRST</button></div>
+                    <div class="buttons-position"><input class="button-2" placeholder="POSITION" id="postion"></input></div>
+                    <div class="buttons-last"><button class="button-3" id="last">LAST</button></div>
+                    <div class="buttons-ejecutar"><button class="button-4" id="ejecutar">+</button></div>
+                    <div class="buttons-add"><button class="button-5" id="add">ADD</button></div>
+                    <div class="buttons-remove"><button class="button-6" id="remove">REMOVE</button></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const first = document.getElementById('first');
+        const add = document.getElementById('add')
+        const bg = document.querySelector('.button-container')
+
+        first.addEventListener('click',function(){
+            bg.style.background="url('images/arrays/first.png')"
+        })
+        add.addEventListener('click',function(){
+            bg.style.background="url('images/arrays/add.png')"
+        })
+    </script>
+</body>
+
+</html>

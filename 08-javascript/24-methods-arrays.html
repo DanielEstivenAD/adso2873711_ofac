@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24- Methods Array</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        section ul {
+            padding: 0%;
+        }
+
+        section ul.emojis li{
+            display: grid;
+            grid-template-columns: 160px 220px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="controls">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#ffffff"
+                    d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L301.3 256 438.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z" />
+            </svg>
+        </a>
+    </nav>
+    <main>
+        <header>
+            <h1>24- Methods Array</h1>
+            <h2>Manipula Arrays usando metodos</h2>
+        </header>
+        <section>
+            <ul class="emojis"></ul>
+        </section>
+    </main>
+    <script>
+        const emojis = document.querySelector('.emojis');
+        emojis.style.fontsize = '1.6rem'
+
+        //Methods array 
+        let arrEmojis = ['👮🏼', '🕵️', '👨‍🏫', '🧑‍🍳']
+        emojis.innerHTML = `<li><b>Values:</b> ${arrEmojis.valueOf()}</li>`
+        emojis.innerHTML += `<li><b>String:</b> ${arrEmojis.toString()}</li>`
+        emojis.innerHTML += `<li><b>Join:</b> ${arrEmojis.join('→')}</li>`
+        emojis.innerHTML += `<li><b>Sort:</b> ${arrEmojis.sort()}</li>`
+        emojis.innerHTML += `<li><b>reverse:</b> ${arrEmojis.reverse()}</li>`
+        arrEmojis.unshift('🧑🏼‍🚒')
+        emojis.innerHTML += `<li><b>Unshift:</b> ${arrEmojis.valueOf()}</li>`
+        arrEmojis.push('🧑🏻‍🚀')
+        emojis.innerHTML += `<li><b>Push:</b> ${arrEmojis.valueOf()}</li>`
+        arrEmojis.shift()
+        emojis.innerHTML += `<li><b>Push:</b> ${arrEmojis.valueOf()}</li>`
+        arrEmojis.pop()
+        emojis.innerHTML += `<li><b>Push:</b> ${arrEmojis.valueOf()}</li>`
+
+    </script>
+</body>
+
+</html>

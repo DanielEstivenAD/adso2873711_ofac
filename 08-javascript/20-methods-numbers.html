@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20-Methods numbers</title>
+    <link rel="stylesheet" href="css/master.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        button.btn-calc {
+            background-color: #b7a63c;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            padding: 0.6rem;
+            width: 200px;
+        }
+
+
+        input.num-float {
+            border: 2px solid #b7a63c;
+            border-radius: 5px;
+            padding: 0.5rem;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="controls">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#ffffff"
+                    d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L301.3 256 438.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z" />
+            </svg>
+        </a>
+    </nav>
+    <main>
+        <header>
+            <h1>20-Methods numbers</h1>
+            <h2>Perform operations with number methods</h2>
+        </header>
+        <section>
+            <input type="number" class="num-float" placeholder="Enter a float number">
+            <button class="btn-calc">Calculate</button>
+            <ul class="output">
+
+            </ul>
+
+        </section>
+    </main>
+    <script>
+        const numFloat = document.querySelector('.num-float');
+        const btnCal   = document.querySelector('.btn-calc');
+        const output   = document.querySelector('.output');
+
+        btnCal.addEventListener('click', function () {
+            const num = parseFloat(numFloat.value);
+            if (isFloat(num)) {
+                output.innerHTML =  "<li><strong>toString:    </strong>"+ num.toString()    + "</li>"
+                output.innerHTML += "<li><strong>toFixed:     </strong>"+ num.toFixed(0)     + "</li>"
+                output.innerHTML += "<li><strong>toPresicion: </strong>"+ num.toPrecision(2) + "</li>"
+                output.innerHTML += "<li><strong>parceInt:    </strong>"+ parseInt(num)      + "</li>"
+                output.innerHTML += "<li><strong>parseFloat:  </strong>"+ num                + "</li>"
+            } else {
+                alert('False')
+            }
+        })
+        function isFloat(num) {
+            return (num % 1 !== 0);
+        }
+    </script>
+</body>
+
+</html>
